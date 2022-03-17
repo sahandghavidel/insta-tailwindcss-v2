@@ -1,15 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram with Tailwind CSS</title>
-    <link href="/dist/output.css" rel="stylesheet">
-</head>
-<body>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="sticky top-0 border-b shadow-sm bg-white z-30">
+      <!-- Header -->
 
-   <h1 class="text-blue-500">hello world</h1>
-    
-</body>
+      <div
+        class="flex justify-between h-24 items-center mx-4 xl:max-w-6xl xl:mx-auto"
+      >
+        <!-- Left  -->
+
+        <div class="cursor-pointer w-24 hidden lg:inline-grid">
+          <img
+            src="https://logos-world.net/wp-content/uploads/2020/04/Instagram-Logo.png"
+            alt="instagram-logo"
+          />
+        </div>
+        <div class="cursor-pointer w-10 lg:hidden">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png"
+            alt="instagram-logo"
+          />
+        </div>
+
+        <!-- Middle -->
+
+        <div class="relative mt-1">
+          <div class="absolute top-2 left-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-gray-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </div>
+          <input placeholder="Search"  class="pl-10 rounded-md focus:ring-black focus:border-black bg-gray-50 border-gray-500 text-sm" type="text" />
+        </div>
+
+        <!-- Right -->
+          <div class="flex space-x-4 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out hidden md:inline-flex" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+
+            <img class="h-10 rounded-full cursor-pointer" src="https://static.skillshare.com/uploads/users/350301760/user-image-large.jpg?753816048" alt="">
+
+          </div>
+        
+      </div>
+    </div>
+
+    <!-- Feed -->
+  </body>
 </html>
